@@ -1,0 +1,288 @@
+:root {
+    font-family: 'Poppins', sans-serif;
+    background-color:#e7d1c5;
+}
+
+
+body {
+    padding: 0;
+    font-weight: normal;
+    
+
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid black;
+    display: inline-block;
+}
+
+
+/* navbar */
+nav {
+    background-color: white;
+       box-shadow: 0 0 2px rgba(0, 0, 0, 0.35);
+    padding: 15px 30px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+ 
+  .top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+ 
+  .logo {
+    flex: 1;
+  }
+  
+
+  .search-bar {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .search-bar input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border: solid 1px #e2725b;
+    font-size: 14px;
+    width: 60%;
+    min-width: 180px;
+  }
+  
+  .search-bar button {
+    padding: 8px 12px;
+    border: none;
+    background-color:#ffffff;
+    cursor: pointer;
+    font-size: 14px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .search-bar button:hover {
+    transform: scale(1.1);
+  }
+  
+
+  .auth-buttons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .auth-buttons button {
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+   
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+    
+  }
+  
+  .auth-buttons button:hover {
+    transform: scale(1.1);
+  }
+  
+  .auth-buttons .login {
+    background-color: #e2725b;
+    color: black;
+  }
+  
+  .auth-buttons .signup {
+    background-color: white;
+    color: black;
+    border: 1px solid #e2725b;
+  }
+  
+  /* menu */
+  .menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 15px 40px; 
+    margin: 0;
+    background-color: #ffffff;
+    margin-top: -8  0px; /* Sobe a linha */
+  }
+  
+  .menu li {
+    position: relative;
+    padding: 0 30px; /* espaçamento horizontal pra centralizar o item entre as linhas */
+    display: flex;
+    align-items: center;
+    height: 15px; /* altura do item pra alinhar com a linha */
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+  }
+  
+  /* remove borda da esquerda no primeiro e da direita no último */
+  .menu li:first-child {
+    border-left: none;
+  }
+  
+  .menu li:last-child {
+    border-right: none;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .menu li a:hover {
+    transform: scale(1.1);
+    color: #e2725b;
+  }
+  
+  
+  .submenu {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    padding: 10px 0;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .submenu li {
+    padding: 5px 20px;
+  }
+  
+  .menu li:hover .submenu {
+    display: block;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+  footer{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+  }
+
+  .footer-section {
+    flex: 1 1 250px;
+    min-width: 200px;
+  }
+  
+  .footer-section h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #000000;
+    border-bottom: 2px solid #e2725b;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  .footer-section p,
+  .footer-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.95rem;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-section ul li a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #e2725b;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  footer > p {
+    text-align: center;
+    font-size: 0.85rem;
+    margin-top: 30px;
+    color: #000000;
+  }
+  .inscription{
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #e2725b;
+    color: black;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+.email{
+    padding: 10px 25px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: black;
+    border: solid 1px #e2725b;
+    transition: transform 0.3s ease-in-out;
+}
+  
